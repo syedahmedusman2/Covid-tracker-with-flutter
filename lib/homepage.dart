@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:html';
 import 'package:covid/country.dart';
+import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import 'package:covid/datasource.dart';
@@ -49,7 +50,14 @@ void initState(){
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Center(child: Text("Covid Tracker App")),
-      backgroundColor: Colors.black26,),
+      backgroundColor: Colors.black26,
+      // actions: [
+      //   IconButton(onPressed: (){
+      //     DynamicTheme.of(context).setBrightness(Theme.of(context).brightness==Brightness.light?Brightness.dark:Brightness.dark);
+
+      //   }, icon: Icon(Theme.of(context).brightness == Brightness.light?Icons.lightbulb:Icons.highlight) )
+      // ],
+      ),
 
       body: SingleChildScrollView(child: Column(
         children: [
