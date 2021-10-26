@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Datasource{
-  static String quote = "Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.";
+class Datasource {
+  static String quote =
+      "Covid-19 vaccine is available everywhere. Vaccinate yourself as soon as possible for saving your and your love one's life";
 
   static List questionAnswers = [
     {
@@ -63,5 +64,4 @@ class Datasource{
           "No. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a bacterial infection. "
     }
   ];
-  
 }

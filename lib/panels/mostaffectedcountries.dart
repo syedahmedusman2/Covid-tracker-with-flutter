@@ -1,39 +1,9 @@
-// import 'package:flutter/material.dart';
-
-// class CountryData extends StatelessWidget {
-//   final List countryData;
-//   const CountryData({ required this.countryData });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       child: ListView.builder(
-//         shrinkWrap: true,
-//         physics: NeverScrollableScrollPhysics(),
-//         itemBuilder: (context, index){
-//         return Container(
-//           margin: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-//           child: Row(
-//             children:<Widget> [
-//               Image.network(countryData[index]['countryInfo']['flag'],
-//               height: 25,)
-
-
-//             ],
-//           ),
-//         );
-//       }),
-      
-//     );
-//   }
-// }
-
 import 'package:flutter/material.dart';
 
 class MostAffectedPanel extends StatelessWidget {
   final List countryData;
 
-  const MostAffectedPanel({ required this.countryData});
+  const MostAffectedPanel({required this.countryData});
 
   @override
   Widget build(BuildContext context) {
@@ -66,13 +36,10 @@ class MostAffectedPanel extends StatelessWidget {
                       TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
                 )
               ],
-
-              
             ),
           );
-         
         },
-        itemCount:5,
+        itemCount: 5,
       ),
     );
   }
